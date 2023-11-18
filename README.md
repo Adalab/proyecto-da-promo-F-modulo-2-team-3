@@ -1,4 +1,4 @@
-# proyecto-da-promo-F-modulo-2-team-3
+# Proyecto CinemExtract: Explorando el Séptimo Arte a través de Datos y Tecnología
 
 # Introducción: 
 
