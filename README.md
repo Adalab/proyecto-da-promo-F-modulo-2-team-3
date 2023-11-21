@@ -2,13 +2,15 @@
 
 # Introducción: 
 
-Nuestro proyecto consiste en aplicar técnicas de análisis de datos para identificar cuáles son las películas y cortometrajes más populares y mejor valorados desde 1990 hasta la fecha para un cliente ficticio de streaming: BHO. 
+Nuestro proyecto consiste en aplicar técnicas de análisis de datos para identificar cuáles son las películas y cortometrajes más populares y mejor valorados desde 1990 hasta la fecha, 2023, para el cliente ficticio de streaming: BHO. Dicho cliente nos presenta como objetivos mejorar la calidad de su contenido y la satisfaccion de sus usuarios.
 
-Las técnicas aplicadas de extracción utilizadas han sido el uso de la API de MovieDatabase (https://rapidapi.com/SAdrian/api/moviesdatabase) en una primera fase y en una segunda, tercera y cuarta fase mediante *scrapping* usando Beautiful Soup y Selenium. 
+Como equipo de trabajo tenemos el objetivo de identificar las películas y cortos más populares en la plataforma BHO, basándonos en criterios como las calificaciones, el número de visualizaciones, y las reseñas de los usuarios. Analizar la evolución de las preferencias de los usuarios a lo largo de los años y determinar las tendencias en la industria cinematográfica.
 
-En una quinta fase se ha elaborado una base de datos en lenguaje SQL y extraido mediante las queries correspondientes la información necesaria para satisfacer los objetivos del proyecto. 
+Las técnicas de extracción que hemos aplicado para desarrollar el proyecto han sido, en la primera fase, el uso de la API de MovieDatabase (https://rapidapi.com/SAdrian/api/moviesdatabase) y en una segunda, tercera y cuarta fase  mediante *scrapping* usando las herramientas *Beautiful Soup y Selenium*. 
 
-Todos los códigos han sido probados previamente a la fase de extracción y corregidos durante la propia fase de extracción de datos quedando pendiente su optimización y mejora para futuras extracciones. 
+En la quinta fase se ha diseñado una base de datos en *lenguaje SQL* y se ha extraido mediante las queries correspondientes la información necesaria para satisfacer los objetivos del proyecto. 
+
+Todos los códigos han sido probados previamente a la fase de extracción y corregidos durante la propia fase, quedando pendiente su optimización y mejora para futuras extracciones. 
 
 
 # Funciones
@@ -38,3 +40,30 @@ Se han definido 5 funciones para la extracción de datos y su ejecución en las 
         - Argumento.
         - Duración (en minutos).
         - Nombre de la película.
+
+
+        FASE 3: Extracción de detalles de actores con Selenium:
+
+    En esta fase se ha obtenido información detallada de los 10 principales actores de cada una de las peliculas extraidas en la fase 1 utilizando Selenium. Dicha información se ha obtenido de la página de IMDB.
+
+        - Nombre
+        - Año de nacimiento
+        - ¿Por qué es conocido?
+        - ¿Qué hace?
+        - Premios
+
+        FASE 4: Extracción de la tabla de los premios Oscar con Beautiful Soup
+    
+    En esta fase se trabajó con la biblioteca Beautiful Soup para extrar información relevante de la tabla de los premios Oscars desde 1990 hasta la actualidad. La tabla fue extraída del siguiente link: https://es.wikipedia.org/wiki/Premios_Óscar 
+       
+        - Fecha de la ceremonia
+        - Mejor película
+        - Mejor director
+        - Mejor actor
+        - Mejor actriz 
+
+        
+        FASE 5: Creación e inserción en la base de datos
+
+    Se pensó y diseñó la estructura de la base de datos donde se insertó toda la información obtenida en las fases anteriores.
+    El pasó final del proyecto fue la creación de las queries para obtener los resultados de las consultas propuestas.
